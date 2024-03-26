@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Heebo";
+  src: url(../src/assets/Heebo-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Heebo";
+  font-style: normal;
+  margin: 0 4vw;
+}
+p {
+  margin: 0px;
+}
+.content {
+  font-family: "Heebo";
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.img {
+  margin-top:2vh ;
+  scale:70%;
+  margin-right:20vw;
+}
+.first-section {
+  grid-column: 1 / 2;
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+}
+.general-div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 6vw;
+}
+.general-text {
+  margin-left: 2vw;
+}
+.general-text p {
+  font-size: 25px;
+}
+.second-section {
+  grid-column: 2 / 3;
+  background-color: #dde4e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.inside-second-section {
+  background-color: #27737d;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 10%;
+}
+
+.alt-lat-date {
+  position: relative;
+  top: 80%;
+  font-size: 14px;
+}
+.weather-condition {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 10px;
+  justify-content: space-between;
+  margin-top: 4vh;
+}
+.condition-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.input-field {
+  font-family: "Heebo";
+  width: 20vw;
+  padding-right: 40px;
+  border: white;
+  border-radius: 5px;
+  height: 5vh;
+}
+.search-div-father p {
+  margin-top: 5vh;
+}
+.search-div {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.search-button {
+  color: white;
+  background-color: #046b3b;
+  font-family: "Heebo";
+  margin-left: -60px;
+  border-radius: 10px;
+  border: none;
+  height: 4vh;
+}
+
+.city_name {
+  margin-top: 5vh;
+  color: white;
+  font-size: 16px;
+}
+.country_name {
+  color: #98bbc1;
+  font-size: 15px;
+}
+.local_time {
+  color: #757575;
+  font-size: 14px;
+}
+.local_time_no_minutes {
+  color: #98bbc1;
+  font-size: 14px;
+}
+.big_degree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.condition_text {
+  color: white;
+  margin-top: -5vh; 
+  align-self: flex-start;
+  transform: translateX(30%);
+}
+.feelslike_degree {
+  color: white;
+  font-size: 72px;
+  font-weight: bold;
+}
+.description-text {
+  color: #b8d1d5;
+  font-size: 14px;
+}
+.description-info {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.forecast_hours {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 10px; 
+  justify-content: space-between; 
+  margin-top: 4vh; 
+  margin-bottom: 4vh;
+}
+.hour_temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temp {
+  color: #b8d1d5;
+  font-size: 14px;
+}
+.hour {
+  color: white;
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 880px) {
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center content horizontally */
+  }
+
+  .alt-lat-date{
+    margin-top: 5vh;
+  }
+  .second-section {
+    margin-top: 20px; /* Add margin to separate from first-section */
+    width: 90vw;
+  }
+}
+
+@media (max-width: 600px){
+.input-field{
+  width: 50vw;
+}
+.alt-lat-date{
+  margin-top: 5vh;
+}
+}
